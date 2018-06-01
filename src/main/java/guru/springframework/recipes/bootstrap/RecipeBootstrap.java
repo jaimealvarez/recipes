@@ -56,6 +56,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         guacamole.setPrepTime(10);
         guacamole.setCookTime(0);
         guacamole.setDifficulty(Difficulty.EASY);
+        guacamole.setServings(4);
+        guacamole.setSource("Simply Recipes");
+        guacamole.setUrl("https://www.simplyrecipes.com/recipes/perfect_guacamole/");
         guacamole.setDirections(
                 "1 Cut avocado, remove flesh: Cut the avocados in half. " +
                 "Remove seed. " +
@@ -118,6 +121,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacos.setPrepTime(20);
         tacos.setCookTime(15);
         tacos.setDifficulty(Difficulty.MODERATE);
+        tacos.setServings(6);
+        tacos.setSource("Simply Recipes");
+        tacos.setUrl("https://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/");
         tacos.setDirections(
                 "1 Prepare a gas or charcoal grill for medium-high, direct heat.\n" +
                 "\n" +
