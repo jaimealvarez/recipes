@@ -23,7 +23,8 @@
             <div class="pannel-group">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class=guru.springframework.recipes.domain.Recipe"panel-title" th:text="${recipe.description}"></h1>
+                        <h1 class=guru.springframework.recipes.domain.Recipe"panel-title"
+                            th:text="${recipe.description}"></h1>
                     </div>
                     <div class="panel-body">
                         <div class="row">
@@ -82,7 +83,15 @@
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class="panel-title" >Ingredients</h1>
+                        <div class="row">
+                            <div class="col-md-11">
+                                <h1 class="panel-title">Ingredients</h1>
+                            </div>
+                            <div class="col-md-1">
+                                <a class="btn btn-default" href="#"
+                                   th:href="@{'/recipe/' + ${recipe.id} + '/ingredient'}" role="button">View</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div class="row">
@@ -96,7 +105,7 @@
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class="panel-title" >Directions</h1>
+                        <h1 class="panel-title">Directions</h1>
                     </div>
                     <div class="panel-body">
                         <div class="row">
@@ -108,7 +117,7 @@
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class="panel-title" >Notes</h1>
+                        <h1 class="panel-title">Notes</h1>
                     </div>
                     <div class="panel-body">
                         <div class="row">
