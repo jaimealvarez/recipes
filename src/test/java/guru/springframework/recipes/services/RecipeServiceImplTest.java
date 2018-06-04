@@ -67,4 +67,10 @@ public class RecipeServiceImplTest {
         recipeService.deleteById(idToDelete);
         verify(recipeRepository, times(1)).deleteById(anyLong());
     }
+
+    public void getRecipeByIdTestNotFound() throws Exception {
+        Optional<Recipe> recipeOptional = Optional.empty();
+        when(recipeRepository.findById(anyLong())).thenReturn(recipeOptional);
+        Recipe recipe = recipeService.findById(1L);
+    }
 }
