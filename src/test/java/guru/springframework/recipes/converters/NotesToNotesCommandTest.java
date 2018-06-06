@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class NotesToNotesCommandTest {
 
-    final Long ID_VALUE = new Long(1L);
+    final String ID_VALUE = "1";
     final String RECIPE_NOTES = "Notes";
     NotesToNotesCommand converter;
 

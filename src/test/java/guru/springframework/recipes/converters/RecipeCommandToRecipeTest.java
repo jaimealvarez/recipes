@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 public class RecipeCommandToRecipeTest {
 
-    final Long RECIPE_ID = 1L;
+    final String RECIPE_ID = "1";
     final Integer COOK_TIME = Integer.valueOf("5");
     final Integer PREP_TIME = Integer.valueOf("7");
     final String DESCRIPTION = "My Recipe";
@@ -22,11 +22,11 @@ public class RecipeCommandToRecipeTest {
     final Integer SERVINGS = Integer.valueOf("3");
     final String SOURCE = "Source";
     final String URL = "Some URL";
-    final Long CAT_ID_1 = 1L;
-    final Long CAT_ID2 = 2L;
-    final Long INGRED_ID_1 = 3L;
-    final Long INGRED_ID_2 = 4L;
-    final Long NOTES_ID = 9L;
+    final String CAT_ID_1 = "1";
+    final String CAT_ID2 = "2";
+    final String INGRED_ID_1 = "3";
+    final String INGRED_ID_2 = "4";
+    final String NOTES_ID = "9";
 
     RecipeCommandToRecipe converter;
 
